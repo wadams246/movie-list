@@ -2,11 +2,18 @@
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
-  'ngRoute',
-  'myApp.current-lists',
-  'myApp.new-list'
+  'ngRoute'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+  $routeProvider
+    .when('/current-lists', {
+      templateUrl: 'current-lists/current-lists.html',
+      controller: 'CurrentListsCtrl'
+    })
+    .when('/new-list', {
+      templateUrl: 'new-list/new-list.html',
+      controller: 'NewListCtrl'
+    });
 
-  $routeProvider.otherwise({redirectTo: '/current-lists'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);
