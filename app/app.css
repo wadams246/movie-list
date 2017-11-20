@@ -43,8 +43,30 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid #e8e8e8;
   font-size: 18px;
   font-weight: 300;
-  margin: 5px 0;
+  margin: 10px 0;
   padding: 5px 0;
+}
+
+.new-movie {
+  margin: 5px 0;
+}
+
+.search-results {
+  display: flex;
+}
+
+.movie-info {
+  padding: 2px 10px;
+}
+
+ul.add-list {
+  list-style: none;
+}
+
+img.resize {
+  float: left;
+  height: 19%;
+  width: 19%;
 }
 
 input[type=submit].search-button  {
@@ -58,5 +80,21 @@ input[type=submit].search-button:hover {
   color: #ffffff;
   background-color: #006687;
   border-color: #004b63;
+  cursor: pointer;
+}
+
+.add-button {
+  margin: 5px 0;
+}
+.add-button input[type=button] {
+  background-color: #5fba7d;
+  border: 1px solid transparent;
+  color: #ffffff;
+  padding: 8px;
+}
+
+.add-button input[type=button]:hover {
+  color: #ffffff;
+  background-color: #54a56e;
   cursor: pointer;
 }

@@ -4,6 +4,6 @@ angular.module('myApp').factory('searchService', ['$http', function($http) {
       var promise =  $http.get('http://www.omdbapi.com/?apikey=f8033250&t=' + title);
 
       return promise;
-      }
     }
+  }
 }]);

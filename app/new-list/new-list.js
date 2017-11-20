@@ -5,12 +5,14 @@ angular.module('myApp').controller('NewListCtrl', ['$scope', 'searchService',
     $scope.master = {};
     $scope.searchService = searchService;
     $scope.searchText = '';
+    $scope.movie = {};
+    $scope.movieFound = false;
 
     $scope.searchImdb = function(title) {
-      console.log('search imdb');
       $scope.searchService.searchImdb(title)
         .then(function(res) {
-          console.log('response: ', res);
+          $scope.movie = res.data;
         })
     }
+
   }]);
