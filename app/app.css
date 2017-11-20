@@ -1,12 +1,62 @@
 /* app css stylesheet */
+html * {
+  font-family: Arial !important;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
 
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
   padding: 0 0 0.5em;
 }
 
 .menu > li {
   display: inline;
+}
+
+.new-list-header {
+  border-bottom: 1px solid #e8e8e8;
+  margin: 5px 0;
+}
+
+.new-list-form {
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  padding: 15px;
+}
+
+.new-list-form input {
+  padding: 7px;
+}
+
+.add-movies {
+  /*border: 1px solid black;
+  border-radius: 3px;*/
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.form-header {
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+input[type=submit].search-button  {
+  background-color: #008cba;
+  border: 1px solid transparent;
+  color: #ffffff;
+  padding: 8px;
+}
+
+input[type=submit].search-button:hover {
+  color: #ffffff;
+  background-color: #006687;
+  border-color: #004b63;
+  cursor: pointer;
 }

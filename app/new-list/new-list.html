@@ -1,1 +1,13 @@
-<p>This is the partial for the new list.</p>
+<div ng-controller="NewListCtrl">
+  <div class="new-list-header">
+    <h2>Create a New Movie List</h2>
+  </div>
+  <form novalidate class="new-list-form" ng-submit="searchImdb()">
+    <label>List Name: <input type="text" ng-model="user.name" /></label><br />
+    <div class="add-movies">
+      <div class="form-header">Seach IMDb and Add Movies</div>
+        <label>Title: <input type="text" ng-model="searchText" /></label>
+        <input class="search-button" type="submit"  value="Search" />
+      </div>
+    </form>
+</div>
