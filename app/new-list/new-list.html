@@ -2,8 +2,10 @@
   <div class="new-list-header">
     <h2>Create a New Movie List</h2>
   </div>
-  <form novalidate class="new-list-form" ng-submit="searchImdb(searchText)">
-    <label>List Name: <input type="text" ng-model="user.name" /></label><br />
+  <form novalidate class="new-list-form" name="create-list-form" ng-submit="searchImdb(searchText)">
+    <label>List Name: <input type="text" ng-model="list.name" /></label>
+    <input class="add-button" type="button" ng-click="createList()" value="Create"<br />
+    <span style="color: red" ng-if="invalidName">List must have a name.</span>
     <div class="add-movies">
       <div class="form-header">Seach IMDb and Add Movies</div>
       <label>Title: <input type="text" ng-model="searchText" /></label>
@@ -12,7 +14,7 @@
       <ul class="add-list" ng-if="movie.Poster">
         <li>
           <div class="search-results">
-            <img class="resize" src="{{ movie.Poster }}" ><br />
+            <img class="search-size" src="{{ movie.Poster }}" ><br />
             <div class="movie-info">
               <h2>{{ movie.Title }}</h2>
               <h4>{{ movie.Year }}</h4>
@@ -20,13 +22,25 @@
               <h4>{{ movie.Actors }}</h4>
               <h4>{{ movie.Genre }}</h4>
               <div class="add-button">
-                <input type="button" ng-click="addMovie()" value="Add" />
+                <input class="add-button" type="button" ng-click="addMovie(movie)" value="Add"
+                  ng-disabled="currentList.indexOf(movie) > -1"/>
               </div>
             </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="current-list">
+        <li ng-repeat="movie in currentList">
+          <div style="display: flex; align-items: center">
+            <input type="checkbox" />
+            <img class="list-size" style="margin-right: 10px" src="{{ movie.Poster }}" >
+            <h4>{{ movie.Title }}</h4>
+            <h5 style="padding-left: 10px">({{ movie.Rated }}) - </h5>
+            <h5 style="padding-left: 5px">{{ movie.Year }} - </h5>
+            <h5 style="padding-left: 5px">{{ movie.Genre }}</h5>
           </div>
         </li>
       </ul>
     </div>
   </form>
 </div>
-<!-- title, year of release, movie poster [if applicable], genre, etc. -->
