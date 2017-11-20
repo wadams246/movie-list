@@ -1,1 +1,13 @@
-<p>This is the partial for current lists avavilable</p>
+<div class="" ng-init="init()">
+  <ul class="lists" >
+    <li ng-repeat="list in lists" >
+      <div ng-click="viewList(list.list)">
+        <h3>{{ list.listName }}</h3><br />
+        <h5 style="padding-left: 10px">List Size: {{ list.totalMovies }}</h5><br />
+        <h5 style="padding-left: 5px">Average Rating: {{ list.averageRating }}</h5><br />
+      </div>
+    </li>
+  </ul>
+
+  <list-directive list="currentList" ng-if="currentList.length > 0"></list-directive>
+</div>

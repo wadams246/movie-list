@@ -1,0 +1,101 @@
+[
+  {
+    "listName": "List 1",
+    "totalMovies": "4",
+    "averageRating": "4",
+    "list": [
+      {
+        "Title": "Dude, Where's My Car?",
+        "Actors": "Ashton Kutcher, Seann William Scott, Jennifer Garner, Marla Sokoloff",
+        "Genre": "Comedy, Mystery, Sci-Fi",
+        "Year": "2000",
+        "Rated": "PG-13",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzRmN2NjNzktOWE1My00NjVlLWFhNjYtZmFkMzM5YTA2ZTFlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+      }, {
+        "Title": "John Wick",
+        "Actors": "Keanu Reeves, Michael Nyqvist, Alfie Allen, Willem Dafoe",
+        "Genre": "Action, Crime, Thriller",
+        "Year": "2014",
+        "Rated": "R",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
+      }, {
+        "Title": "RoboCop",
+        "Actors": "Peter Weller, Nancy Allen, Dan O'Herlihy, Ronny Cox",
+        "Genre": "Action, Crime, Sci-Fi",
+        "Year": "1987",
+        "Rated": "R",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWVlYzU2ZjQtZmNkMi00OTc3LTkwZmYtZDVjNmY4OWFmZGJlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+      }, {
+        "Title": "Star Wars: Episode IV - A New Hope",
+        "Actors": "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing",
+        "Genre": "Action, Adventure, Fantasy",
+        "Year": "1977",
+        "Rated": "PG",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTUwNTdiMzMtNThmNS00ODUzLThlMDMtMTM5Y2JkNWJjOGQ2XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg"
+      }
+    ]
+  }, {
+    "listName": "List 2",
+    "totalMovies": "2",
+    "averageRating": "4",
+    "list": [
+      {
+        "Title": "Star Wars: Episode IV - A New Hope",
+        "Actors": "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing",
+        "Genre": "Action, Adventure, Fantasy",
+        "Year": "1977",
+        "Rated": "PG",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTUwNTdiMzMtNThmNS00ODUzLThlMDMtMTM5Y2JkNWJjOGQ2XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg"
+      }, {
+        "Title": "John Wick",
+        "Actors": "Keanu Reeves, Michael Nyqvist, Alfie Allen, Willem Dafoe",
+        "Genre": "Action, Crime, Thriller",
+        "Year": "2014",
+        "Rated": "R",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
+      }
+    ]
+  }, {
+    "listName": "List 3",
+    "totalMovies": "3",
+    "averageRating": "4",
+    "list": [
+      {
+        "Title": "Star Wars: Episode IV - A New Hope",
+        "Actors": "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing",
+        "Genre": "Action, Adventure, Fantasy",
+        "Year": "1977",
+        "Rated": "PG",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTUwNTdiMzMtNThmNS00ODUzLThlMDMtMTM5Y2JkNWJjOGQ2XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg"
+      }, {
+        "Title": "John Wick",
+        "Actors": "Keanu Reeves, Michael Nyqvist, Alfie Allen, Willem Dafoe",
+        "Genre": "Action, Crime, Thriller",
+        "Year": "2014",
+        "Rated": "R",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
+      }, {
+        "Title": "RoboCop",
+        "Actors": "Peter Weller, Nancy Allen, Dan O'Herlihy, Ronny Cox",
+        "Genre": "Action, Crime, Sci-Fi",
+        "Year": "1987",
+        "Rated": "R",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWVlYzU2ZjQtZmNkMi00OTc3LTkwZmYtZDVjNmY4OWFmZGJlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+      }
+    ]
+  }, {
+    "listName": "List 4",
+    "totalMovies": "1",
+    "averageRating": "4",
+    "list": [
+      {
+        "Title": "John Wick",
+        "Actors": "Keanu Reeves, Michael Nyqvist, Alfie Allen, Willem Dafoe",
+        "Genre": "Action, Crime, Thriller",
+        "Year": "2014",
+        "Rated": "R",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
+      }
+    ]
+  }
+]

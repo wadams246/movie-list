@@ -27,6 +27,10 @@ const config = {
           use: 'css-loader',
           publicPath: '/app/scripts/dist'
         })
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   },

@@ -1,9 +1,10 @@
 'use strict';
 
-angular.module('myApp').controller('NewListCtrl', ['$scope', 'searchService',
-  function($scope, searchService) {
+angular.module('myApp').controller('NewListCtrl', ['$scope', 'searchService', 'listService',
+  function($scope, searchService, listService) {
     $scope.master = {};
     $scope.searchService = searchService;
+    $scope.listService = listService;
     $scope.searchText = '';
     $scope.movie = {};
     $scope.list = {};
@@ -25,10 +26,13 @@ angular.module('myApp').controller('NewListCtrl', ['$scope', 'searchService',
       }
       $scope.successMessage = true;
       console.log('curentList: ', $scope.currentList);
+      angular.forEach($scope.currentList, function(i) {
+        console.log('i: ', i);
+      })
     }
 
     $scope.createList = function() {
-      $scpe.invalidName = false;
+      $scope.invalidName = false;
       if($scope.list.name === undefined || $scope.list.name.length < 1) {
         $scope.invalidName = true;
       } else {
@@ -37,5 +41,12 @@ angular.module('myApp').controller('NewListCtrl', ['$scope', 'searchService',
             console.log('res: ', res);
           })
       }
+    }
+
+    $scope.getList = function() {
+      $scope.listService.getList()
+        .then(function(res) {
+          console.log('res: ', res)
+        })
     }
   }]);
