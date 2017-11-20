@@ -1,19 +1,32 @@
-angular.module('myApp').factory('listService', ['$http', function($http) {
+angular.module('myApp').factory('listService', ['$http', '$q', function($http, $q) {
   return {
-    addList: function(listObj) {
+    addList: function(listObj, success) {
       var promise = $q(function(resolve, reject) {
         setTimeout(function() {
-          if (okToGreet(name)) {
-            resolve('Hello, ' + name + '!');
+          if (success) {
+            resolve('200', listObj);
           } else {
-            reject('Greeting ' + name + ' is not allowed.');
+            reject('500 Error');
           }
-        }, 1000);
+        }, 200);
       });
       return promise;
     },
     getLists: function(url) {
       var promise = $http.get(url);
+
+      return promise;
+    },
+    removeItem: function(success) {
+      var promise = $q(function(resolve, reject) {
+        setTimeout(function() {
+          if (success) {
+            resolve('200');
+          } else {
+            reject('500');
+          }
+        }, 200);
+      });
 
       return promise;
     }

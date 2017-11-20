@@ -1,13 +1,16 @@
 <div class="" ng-init="init()">
   <ul class="lists" >
     <li ng-repeat="list in lists" >
-      <div ng-click="viewList(list.list)">
-        <h3>{{ list.listName }}</h3><br />
-        <h5 style="padding-left: 10px">List Size: {{ list.totalMovies }}</h5><br />
-        <h5 style="padding-left: 5px">Average Rating: {{ list.averageRating }}</h5><br />
+      <div ng-click="viewList(list)">
+        <h3>{{ list.listName }}</h3>
+        <h5 style="padding-left: 10px">List Size: {{ list.totalMovies }}</h5>
+        <h5 style="padding-left: 5px">Average Rating: {{ list.averageRating }}</h5>
       </div>
     </li>
   </ul>
 
+  <div style="margin-top: 20px;">
+    <h2>{{selectedList}}</h2>
+  </div>
   <list-directive list="currentList" ng-if="currentList.length > 0"></list-directive>
 </div>

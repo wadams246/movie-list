@@ -49,4 +49,12 @@ angular.module('myApp').controller('NewListCtrl', ['$scope', 'searchService', 'l
           console.log('res: ', res)
         })
     }
+
+    $scope.$on('deleteItem', function(event, movie) {
+      $scope.listService.removeItem(true)
+        .then(function(res) {
+          var index = $scope.currentList.indexOf(movie);
+          $scope.currentList.splice(index, 1);
+        })
+    })
   }]);
