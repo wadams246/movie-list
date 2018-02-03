@@ -1,12 +1,40 @@
 /* app css stylesheet */
-html * {
+html {
   font-family: Arial !important;
+  height: 100%;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+.side-nav {
+  background-color: #202020;
+  color: #aba9a9;
+  height: 100%;
+  padding-top: 5px;
+  width: 100%;
+}
+.nav-heading {
+  border-bottom: 1px solid #aba9a9;
+  padding: 5px;
+  text-align: center;
+}
+.links {
+  padding-top: 20px;
+}
+.link {
+  padding: 5px;
+}
+.link:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+
+//////////////////////
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;

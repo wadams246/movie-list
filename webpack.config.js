@@ -11,6 +11,7 @@ const config = {
       './node_modules/angular/angular.js',
       './node_modules/angular-route/angular-route.js'
     ],
+    vendorCss: './node_modules/bootstrap/dist/css/bootstrap.css',
     css: glob.sync('./app/**/*.css')
   },
   output: {
@@ -37,7 +38,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({template: './app/index.html'}),
     new ExtractTextPlugin({
-      filename: 'styles.css',
+      filename: '[name].css',
       disable: false,
       allChunks: true
     })

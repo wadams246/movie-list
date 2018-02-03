@@ -8,15 +8,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="app.css"> -->
 </head>
-<body>
-  <div>Movie List</div>
+<body class="h-100 w-100">
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="col-2 h-100 side-nav">
+        <div class="nav-heading"><h1>Cool Title</h1></div>
+
+        <div class="links">
+          <div class="link">Cool Link</div>
+          <div class="link">Cool Link</div>
+          <div class="link">Cool Link</div>
+          <div class="link">Cool Link</div>
+          <div class="link">Cool Link</div>
+          <div class="link">Cool Link</div>
+          <div class="link">Cool Link</div>
+        </div>
+      </div>
+
+      <div class="col-10 content">
+        <div ng-view></div>
+      </div>
+    </div>
+  </div>
+  <!-- <div>Movie List</div>
 
   <ul class="menu">
     <li><a href="#/current-lists">Current Lists</a></li>
     <li><a href="#/new-list">Create New List</a></li>
-  </ul>
+  </ul> -->
 
-  <div ng-view></div>
 
   <script type="text/javascript" src="vendor.js"></script>
   <script type="text/javascript" src="app.js"></script>
