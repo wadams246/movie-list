@@ -1,16 +1,20 @@
 'use strict';
 
-angular.module('myApp', ['ngRoute']).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $routeProvider
-    .when('/current-lists', {
-      templateUrl: 'current-lists/current-lists.html',
-      controller: 'CurrentListsCtrl'
-    })
-    .when('/new-list', {
-      templateUrl: 'new-list/new-list.html',
-      controller: 'NewListCtrl'
-    });
+angular.module('myApp', ['ui.router'])
+  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-  $routeProvider.otherwise({redirectTo: '/'});
-}]);
+    $stateProvider
+      .state('current-lists', {
+        url: '/current-lists',
+        templateUrl: 'current-lists/current-lists.html',
+        controller: 'CurrentListsCtrl'
+      })
+      .state('new-list', {
+        url: '/new-list',
+        templateUrl: 'new-list/new-list.html',
+        controller: 'NewListCtrl'
+      })
+
+
+    // $urlRouterProvider.otherwise('/');
+  }]);

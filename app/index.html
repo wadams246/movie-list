@@ -15,18 +15,21 @@
         <div class="nav-heading"><h1>Cool Title</h1></div>
 
         <div class="links">
-          <div class="link">Cool Link</div>
-          <div class="link">Cool Link</div>
-          <div class="link">Cool Link</div>
-          <div class="link">Cool Link</div>
-          <div class="link">Cool Link</div>
-          <div class="link">Cool Link</div>
-          <div class="link">Cool Link</div>
+          <ul>
+            <li class="link">
+              <a ui-sref="current-lists" ui-sref-active="active">
+                <i class="fas fa-camera-retro nav-icon"></i>Current Lists
+              </a>
+              <a ui-sref="new-list" ui-sref-active="active">
+                <i class="fas fa-camera-retro nav-icon"></i>New List
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
       <div class="col-10 content">
-        <div ng-view></div>
+        <div ui-view></div>
       </div>
     </div>
   </div>
@@ -40,5 +43,6 @@
 
   <script type="text/javascript" src="vendor.js"></script>
   <script type="text/javascript" src="app.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </body>
 </html>

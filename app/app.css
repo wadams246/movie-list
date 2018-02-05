@@ -11,30 +11,53 @@ h1, h2, h3, h4, h5 {
 
 .side-nav {
   background-color: #202020;
-  color: #aba9a9;
+  border: 1px solid black;
+  color: #ffffff;
   height: 100%;
   padding-top: 5px;
   width: 100%;
 }
 .nav-heading {
-  border-bottom: 1px solid #aba9a9;
+  border-bottom: 2px solid #0072ff;
   padding: 5px;
   text-align: center;
 }
 .links {
   padding-top: 20px;
 }
-.link {
+.links ul {
+  padding-left: 15px;
+}
+.links a {
+  border-left: 5px solid #202020;
+  color: #aba9a9;
+  display: block;
   padding: 5px;
+  text-decoration: none;
 }
-.link:hover {
-  background-color: white;
+.links a:hover {
+  color: #ffffff;
+}
+.link {
+  list-style: none;
+}
+.nav-icon {
+  margin-right: 10px;
+}
+.active {
+  border-left: 5px solid #0072ff !important;
+  color: #ffffff !important;
+
+}
+.active:hover {
   color: black;
-  cursor: pointer;
 }
 
+.content {
+}
 
-//////////////////////
+/* ////////////////////// */
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;

@@ -9,7 +9,7 @@ const config = {
     app: glob.sync('./app/**/*.js'),
     vendor: [
       './node_modules/angular/angular.js',
-      './node_modules/angular-route/angular-route.js'
+      './node_modules/@uirouter/angularjs/release/angular-ui-router.js'
     ],
     vendorCss: './node_modules/bootstrap/dist/css/bootstrap.css',
     css: glob.sync('./app/**/*.css')
