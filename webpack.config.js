@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 const glob = require('glob');
@@ -16,7 +17,7 @@ const config = {
   },
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, 'app/scripts/dist')
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -36,6 +37,7 @@ const config = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({template: './app/index.html'}),
     new ExtractTextPlugin({
       filename: '[name].css',

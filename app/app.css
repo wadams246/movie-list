@@ -11,10 +11,9 @@ h1, h2, h3, h4, h5 {
 
 .side-nav {
   background-color: #202020;
-  border: 1px solid black;
   color: #ffffff;
   height: 100%;
-  padding-top: 5px;
+  padding: 5px 0 0 0;
   width: 100%;
 }
 .nav-heading {
@@ -26,13 +25,12 @@ h1, h2, h3, h4, h5 {
   padding-top: 20px;
 }
 .links ul {
-  padding-left: 15px;
+  padding-left: 0;
 }
 .links a {
-  border-left: 5px solid #202020;
   color: #aba9a9;
   display: block;
-  padding: 5px;
+  padding: 5px 5px 5px 20px;
   text-decoration: none;
 }
 .links a:hover {
@@ -45,7 +43,7 @@ h1, h2, h3, h4, h5 {
   margin-right: 10px;
 }
 .active {
-  border-left: 5px solid #0072ff !important;
+  background-color: #0072ff !important;
   color: #ffffff !important;
 
 }

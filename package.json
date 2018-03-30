@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "A movie list code challenge",
   "devDependencies": {
-    "clean-webpack-plugin": "^0.1.17",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
@@ -22,12 +22,11 @@
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "npm run clean; webpack; http-server -a localhost -p 8000 -c-1 ./app",
+    "start": "webpack; http-server -a localhost -p 8000 -c-1 ./app",
     "start:dev": "webpack-dev-server",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
-    "test-single-run": "karma start karma.conf.js --single-run",
-    "clean": "rm -r app/scripts/dist/*"
+    "test-single-run": "karma start karma.conf.js --single-run"
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.14",
